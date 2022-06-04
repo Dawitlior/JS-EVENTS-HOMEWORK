@@ -1,4 +1,5 @@
 body{
 background-color:lightcyan;
 display: flex;
+flex-direction: column;
 }
