@@ -2,12 +2,12 @@
 
 function getTheName(){
     var put1 = document.getElementById("input1");
-    return put1.value
+    return put1.value;
 }
 
 function getTheUserDate(){
     var put2 = document.getElementById("input2");
-    return put2.value
+    return put2.value;
 }
 function changeColorFirst(){
   document.getElementById("result").innerHTML = "welcome";
@@ -25,13 +25,58 @@ function tempDate(){
     var someTime = new Date("01/01/2004");
     return someTime
 }
+
+document.getElementById("btn1").
+addEventListener("click",mainFunction);
+
+
 function mainFunction(){
-  if ( ) {
-    document.getElementById("result").innerHTML =getTheUserDate() + getTheUserDate() ;
+  if(getTheName() && getTheUserDate() != ""){
+    if(getTheUserDate() <= "01/01/2004" ){
+          document.getElementById("result").innerHTML =
+          getTheUserDate() + getTheName()
+        }
+        else{
+          document.getElementById("result").innerHTML =
+          changeColorNoEntry()
+        }
+  }
+
     } 
-  else {
-  }  
+
+    // 3)	התכנית מקבלת מהמשתמש שם משפחה ו 4 שמות פרטיים שונים, בעת לחיצה על כפתור מדפיסה את כל השמות ביחד עם השם משפחה, כרשימה. 
+
+function someMainFunction(){
+  document.getElementById("myUl").innerHTML = 
 }
+
+function getTheValueFromInput(){
+ var valueUser = document.querySelectorAll(".targil3");
+return valueUser.values
+};
+
+function myTempArray(){
+    document.getElementById("myP22").innerHTML = getTheValueFromInput();
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
