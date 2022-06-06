@@ -49,10 +49,9 @@ function secondMainFunction(){
  var valueUser = document.querySelectorAll(".targil3");
   var result = "";
   for(var i = 0 ; i<valueUser.length;i++){
-    result += "<br>" + valueUser[i].value + someTempFunction()
-  };
+    result += "<br>" + valueUser[i].value + someTempFunction()};
   document.getElementById("myP22").innerHTML =
-    "<li>" + result + " " + someTempFunction() + "</li>";
+    "<li>" + result + someTempFunction() + "</li>";
 
 };
 
@@ -63,8 +62,19 @@ function secondMainFunction(){
 function someTempFunction(){
   var x = document.getElementById("onlyId");
 return x.value;
-}
+};
 
+
+// 4)	צבעו את השמות שמתחילים באותה אות כמו שם המשתמש.
+
+function checkIfTheIndexEqual(){
+  var valueUser = document.querySelectorAll(".targil3");
+  for (var i = 0; i < valueUser.length; i++) {
+    if (valueUser[i] == valueUser[i]) {
+      valueUser[i].style.color = "red";
+    }
+  }
+}
 
 
 
