@@ -26,23 +26,18 @@ function tempDate(){
     return someTime
 }
 
-document.getElementById("btn1").
-addEventListener("click",mainFunction);
-
 
 function mainFunction(){
-  if(getTheName() && getTheUserDate() != ""){
-    if(getTheUserDate() <= "01/01/2004" ){
-          document.getElementById("result").innerHTML =
-          getTheUserDate() + getTheName()
+    if(getTheUserDate() > "01/01/2004" ){
+         changeColorFirst();
         }
         else{
-          document.getElementById("result").innerHTML =
-          changeColorNoEntry()
+          changeColorNoEntry();
         }
   }
 
-    } 
+    var btn = document.getElementById("btn1").addEventListener("click",mainFunction);
+    
 
     // 3)	התכנית מקבלת מהמשתמש שם משפחה ו 4 שמות פרטיים שונים, בעת לחיצה על כפתור מדפיסה את כל השמות ביחד עם השם משפחה, כרשימה. 
 
@@ -61,13 +56,13 @@ function secondMainFunction(){
 
 };
 
-function myTempArray(){
-  document.getElementById("myP22").innerHTML = secondMainFunction();
-}
+// function myTempArray(){
+//   document.getElementById("myP22").innerHTML = secondMainFunction();
+// }
 
 function someTempFunction(){
   var x = document.getElementById("onlyId");
-return x.value
+return x.value;
 }
 
 
