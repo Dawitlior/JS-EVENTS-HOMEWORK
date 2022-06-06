@@ -46,21 +46,29 @@ function mainFunction(){
 
     // 3)	התכנית מקבלת מהמשתמש שם משפחה ו 4 שמות פרטיים שונים, בעת לחיצה על כפתור מדפיסה את כל השמות ביחד עם השם משפחה, כרשימה. 
 
-function someMainFunction(){
-  document.getElementById("myUl").innerHTML = 
-}
+// function someMainFunction(){
+//   document.getElementById("myUl").innerHTML = 
 
-function getTheValueFromInput(){
+
+function secondMainFunction(){
  var valueUser = document.querySelectorAll(".targil3");
-return valueUser.values
+  var result = "";
+  for(var i = 0 ; i<valueUser.length;i++){
+    result += "<br>" + valueUser[i].value + someTempFunction()
+  };
+  document.getElementById("myP22").innerHTML =
+    "<li>" + result + " " + someTempFunction() + "</li>";
+
 };
 
 function myTempArray(){
-    document.getElementById("myP22").innerHTML = getTheValueFromInput();
- 
+  document.getElementById("myP22").innerHTML = secondMainFunction();
 }
 
-
+function someTempFunction(){
+  var x = document.getElementById("onlyId");
+return x.value
+}
 
 
 
