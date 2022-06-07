@@ -49,10 +49,10 @@ function secondMainFunction(){
  var valueUser = document.querySelectorAll(".targil3");
   var result = "";
   for(var i = 0 ; i<valueUser.length;i++){
-    result += "<br>" + valueUser[i].value + someTempFunction()};
+    result +=
+     "<br>" + valueUser[i].value + " " + someTempFunction()};
   document.getElementById("myP22").innerHTML =
     "<li>" + result + someTempFunction() + "</li>";
-
 };
 
 // function myTempArray(){
@@ -80,6 +80,17 @@ function checkIfTheIndexEqual(){
 
 
 
+
+// שאלה 5
+
+function createInput(){
+  search_div.innerHTML = "<br>" + "<input oninput = 'searchFunc()' type = 'search' placeholder='Enter Name' id='search_input'/>";
+
+}
+
+function searchFunc(){
+result.innerHTML = document.getElementById("search_input").value;
+}
 
 
 
